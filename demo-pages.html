@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atakumi Chat Widget Demo</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .config-panel { background: #f5f5f5; padding: 20px; margin: 20px 0; border-radius: 8px; }
+        .demo-section { border: 1px solid #ddd; padding: 20px; margin: 20px 0; border-radius: 8px; }
+        input, select { padding: 8px; margin: 5px; width: 300px; }
+        button { padding: 10px 20px; background: #007cba; color: white; border: none; border-radius: 4px; cursor: pointer; }
+        .color-input { width: 60px !important; }
+    </style>
+</head>
+<body>
+    <h1>Atakumi Chat Widget Demo</h1>
+    
+    <div class="config-panel">
+        <h3>Configuration</h3>
+        <label>N8N Webhook URL:</label><br>
+        <input type="url" id="webhookUrl" placeholder="https://your-n8n-instance.com/webhook/your-id"><br>
+        
+        <label>Primary Color:</label>
+        <input type="color" id="primaryColor" value="#e74266" class="color-input"><br>
+        
+        <label>Secondary Color:</label>
+        <input type="color" id="secondaryColor" value="#20b69e" class="color-input"><br>
+        
+        <button onclick="updateChat()">Apply Settings</button>
+    </div>
+
+    <div class="demo-section">
+        <h3>Speech Bubble Mode</h3>
+        <div id="bubble-chat"></div>
+    </div>
+
+    <div class="demo-section">
+        <h3>Embedded Mode</h3>
+        <div id="embedded-chat" style="height: 400px;"></div>
+    </div>
+
+    <script>
+        // Demo functionality will be added in next step
+    </script>
+</body>
+</html>
